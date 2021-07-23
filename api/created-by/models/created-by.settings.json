@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "created_bies",
+  "info": {
+    "name": "created_by",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firstname": {
+      "type": "string"
+    },
+    "lastname": {
+      "type": "string"
+    },
+    "posts": {
+      "collection": "post",
+      "via": "created_bies",
+      "dominant": true
+    }
+  }
+}
